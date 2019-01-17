@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 7
+      Case Problem 3
+
+      CSS Demo Form
+      Author: Dajah Medina
+      Date:   1.16.19
+
+      Filename:   index.html
+
+   -->
+
+    <meta charset="utf-8" />
+    <title>CSS Styles Demo</title>
+    <link href="wm_reset.css" rel="stylesheet" />
+    <link href="wm_styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="wm_forms.css" />
+    <script src="wm_script.js file"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <img src="wm_logo.png" alt="WidgetMage" />
+        <nav class="horizontal">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Widgets</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">Demos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="vertical">
+        <ul>
+            <li class="newgroup"><a href="#">Home</a></li>
+            <li class="newgroup"><a href="#">Animations</a></li>
+            <li><a href="#">Buttons</a></li>
+            <li><a href="#">Calendars</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Drag &amp; Drop</a></li>
+            <li><a href="#">Image Tools</a></li>
+            <li><a href="#">Icons</a></li>
+            <li><a href="#">Layout Tools</a></li>
+            <li><a href="#">List Boxes</a></li>
+            <li><a href="#">Menus</a></li>
+            <li><a href="#">Popups</a></li>
+            <li><a href="#">Ribbons</a></li>
+            <li><a href="#">Sliders</a></li>
+            <li><a href="#">Spinners</a></li>
+            <li><a href="#">Toolbars</a></li>
+            <li><a href="#">Tooltips</a></li>
+            <li><a href="#">Tree Views</a></li>
+            <li class="newgroup"><a href="#">Tutorials</a></li>
+            <li><a href="#">Tips &amp; Tricks</a></li>
+            <li><a href="#">White Papers</a></li>
+            <li><a href="#">User Forums</a></li>
+            <li><a href="#">External Links</a></li>
+            <li class="newgroup"><a href="#">Demonstrations</a></li>
+            <li class="newgroup"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>CSS Demo</h1>
+        <form>
+            <textarea name="samleText" id="sampleBox" placeholder="Enter sample text and press the Tab key" autofocus
+                tabindex="1" wrap="hard">
+            </textarea>
+            <p>Selet the CSS style values from the form below and preview the effect on the sample text in the preview
+                box.</p>
+
+            <fieldset>
+                <legend>Fonts</legend>
+                <label for="fontfamily">Font Family</label>
+                <select name="fontfamily" id="fontfamily">
+                    <optgroup label="generic fonts">
+                        <option value="default">default</option>
+                        <option value="serif">serif</option>
+                        <option value="sans-serif">sans-serif</option>
+                        <option value="monospace">monospace</option>
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                    </optgroup>
+
+                    <optgroup label="specific fonts">
+                        <option value="Arial">Arial</option>
+                        <option value="'Book Aniqua'">'Book Aniqua'</option>
+                        <option value="'Courier New'">'Courier New'</option>
+                        <option value="Geneva">Geneva</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Impact">Impact</option>
+                        <option value="Palation">Palation</option>
+                        <option value="Tahoa">Tahoa</option>
+                        <option value="'Times New Roman'">'Times New Roman'</option>
+                    </optgroup>
+
+                </select>
+                <label for="fontstyle">Font style</label>
+                <select name="fontstyle" id="fontstyle">
+                    <option value="normal">normal</option>
+                    <option value="italic">italic</option>
+                    <option value="oblique">oblique</option>
+                </select>
+
+                </select>
+                <label for="fontweight">Font weight</label>
+                <select name="fontweight" id="fontweight">
+                    <option value="normal">normal</option>
+                    <option value="bold">bold</option>
+                </select>
+
+                </select>
+                <label for="textdecoration">Text Decoration</label>
+                <select name="textdecoration" id="textdecoration">
+                    <option value="none">none</option>
+                    <option value="line-trough">line-trough</option>
+                    <option value="overline">overline</option>
+                    <option value="underline">underline</option>
+                </select>
+
+                </select>
+                <label for="texttransformation">Text Transformation</label>
+                <select name="texttransformation" id="texttransformation">
+                    <option value="none">none</option>
+                    <option value="capitalize">capitalize</option>
+                    <option value="lowercase">lowercase</option>
+                    <option value="uppercase">uppercase</option>
+                </select>
+
+                <label for="fontvariant">Font variant</label>
+                <select name="fontvariant" id="fontvarian">
+                    <option value="normal">normal</option>
+                    <option value="small-caps">small-caps</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Colors</legend>
+                <label for="color">Font Color (hexadecimal)</label>
+                <input type="color" name="color" id="color" value="#000000">
+
+                <label for="backgroundcolor">Background color</label>
+                <input type="" name="backgroundcolor" id="backgroundcolor" placeholder="#rrggbb" value=" #FFFFFF" data-="color">
+            </fieldset>
+            <fieldset>
+                <legend>Sizes</legend>
+                <label for="rangeslider">Font Size (px)</label>
+                <div class="slider">
+                    8
+                    <input type="range" name="rangeslider" id="rangeslider" step="1" min="8" max="40" value="14">
+                    40
+                </div>
+
+                <div>
+                    <label for="letterspacing">letter Spacing</label>
+                    <input type="range" name="letterspacing" id="rangeslider" step="1" min="0" max="10" value="0">
+                </div>
+            </fieldset>
+
+
+        </form>
+
+        <h2>Rendered Text</h2>
+        <div id="output"></div>
+
+    </section>
+
+
+</body>
+
+</html>
