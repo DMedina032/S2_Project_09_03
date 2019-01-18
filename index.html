@@ -154,16 +154,44 @@
             <fieldset>
                 <legend>Sizes</legend>
                 <label for="rangeslider">Font Size (px)</label>
-                <div class="slider">
+                <div class="rangeslider">
                     8
                     <input type="range" name="rangeslider" id="rangeslider" step="1" min="8" max="40" value="14">
                     40
                 </div>
 
-                <div>
-                    <label for="letterspacing">letter Spacing</label>
+
+                <label for="letterspacing">Letter Spacing (px)</label>
+                <div class="rangeslider">
+                    0
                     <input type="range" name="letterspacing" id="rangeslider" step="1" min="0" max="10" value="0">
+                    10
                 </div>
+
+
+                <label for="wordspacing">Word Spacing (px)</label>
+                <div class="rangeslider">
+                    0
+                    <input type="range" name="wordspacing" id="rangeslider" step="1" min="0" max="10" value="0">
+                    10
+                </div>
+
+
+                <label for="lineheight">Line Height (em)</label>
+                <div class="rangeslider">
+                    0
+                    <input type="range" name="lineheight" id="rangeslider" step="0.2" min="0" max="4" value="0">
+                    4
+                </div>
+
+
+                <label for="textindent">Text Indent (px)</label>
+                <div class="rangeslider">
+                    0
+                    <input type="range" name="textindent" id="rangeslider" step="1" min="0" max="10" value="0">
+                    10
+                </div>
+
             </fieldset>
 
 
