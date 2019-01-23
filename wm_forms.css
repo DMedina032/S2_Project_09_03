@@ -18,33 +18,33 @@
 legend tag to give it a background color using rgb (hexidecimals). I then gave this a width to strech it 100% and set the margin per each side.
   */
 fieldset {
-    border: none;
-    width: 60%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+  border: none;
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 legend {
-    background-color: rgb(232, 232, 232);
-    width: 100%;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-right: 0px;
-    margin-left: 0px;
+  background-color: rgb(232, 232, 232);
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 /* Next, I inputed styles for the divs. I used the tag div with a class of rangeslider to target the multiple ones with the class of this
 in the index and gave it a selector and floated them all to the left and set the width and margins.  */
 /* DIV Styles */
 div.rangeslider {
-    float: left;
-    width: 60%;
-    margin-bottom: 2px;
-    margin-top: 2PX;
-    margin-right: 0px;
-    margin-left: 0px;
+  float: left;
+  width: 60%;
+  margin-bottom: 2px;
+  margin-top: 2PX;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 /* Control Styles */
@@ -55,43 +55,54 @@ For the select tag I gave it a selector and a display of block for its own indiv
 to target the typenof color from the index. For the textarea, I gave it a font-size witha width, a height, and a margi set to it. */
 label {
   clear: left;
-    float: left;
-    display: block;
-    width: 40%;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-label#backgroundcolor{
-  clear: left;
   float: left;
-}
-
-input, select{
+  display: block;
+  width: 40%;
   margin-top: 2px;
   margin-bottom: 2px;
   margin-left: 0px;
   margin-right: 0px;
 }
 
-input.rangeslider{
+
+label#backgroundcolor {
+  clear: left;
+  float: left;
+}
+
+input#backgroundcolor {
+  clear: left;
+  float: left;
+}
+
+
+
+
+input,
+select {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+input.rangeslider {
   width: 60%;
 }
 
-select{
+select {
   display: block;
   float: left;
   width: 120px;
 }
 
-input{type="color"}{
+input [type="color"] {
   display: block;
   float: left;
   width: 75px;
 }
 
-textarea{
+textarea {
   font-size: 1.5em;
   width: 100%;
   height: 200px;
@@ -102,20 +113,26 @@ textarea{
 /* Placeholder Styles */
 /* In now targeted each extention by using psedo classes for the placeholders to change the background color, the font color, and the font size. */
 
-::-webkit-input-placeholder{
+::placeholder {
   background: rgb(255, 255, 191);
   color: rgb(255, 151, 151);
   font-size: 1.5em;
 }
 
-  ::-moz-placeholder{
-    background: rgb(255, 255, 191);
-    color: rgb(255, 151, 151);
-    font-size: 1.5em;
-  }
+::-webkit-input-placeholder {
+  background: rgb(255, 255, 191);
+  color: rgb(255, 151, 151);
+  font-size: 1.5em;
+}
 
-  :-ms-input-placeholder{
-    background: rgb(255, 255, 191);
-    color: rgb(255, 151, 151);
-    font-size: 1.5em;
-  }
+::-moz-placeholder {
+  background: rgb(255, 255, 191);
+  color: rgb(255, 151, 151);
+  font-size: 1.5em;
+}
+
+:-ms-input-placeholder {
+  background: rgb(255, 255, 191);
+  color: rgb(255, 151, 151);
+  font-size: 1.5em;
+}

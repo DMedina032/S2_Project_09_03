@@ -20,7 +20,7 @@
     <link href="wm_reset.css" rel="stylesheet" />
     <link href="wm_styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="wm_forms.css" />
-    <script src="wm_script.js file"></script>
+    <script src="wm_script.js"></script>
 </head>
 
 
@@ -69,20 +69,25 @@
         </ul>
     </nav>
 
+
     <section>
         <h1>CSS Demo</h1>
+
+        <!-- I  created a form to build a web form for the user and put  in a textarea and gave it  a name and an id so it can be later be targeted with the placeholder for the user to see in the browser.  -->
+
         <form>
-            <textarea name="samleText" id="sampleBox" placeholder="Enter sample text and press the Tab key" autofocus
-                tabindex="1" wrap="hard">
-            </textarea>
+            <textarea name="sampleText" id="sampleBox" placeholder="Enter sample text and press the Tab key." tabindex="1"
+                wrap="hard" autofocus></textarea>
             <p>Selet the CSS style values from the form below and preview the effect on the sample text in the preview
                 box.</p>
+
+            <!-- I created a fieldset for a section in the web form and gave it a legend of fonts so the user can then locate what they are looking for. When using lables, I gave it a for and a label. For the selct, I gave itthe same name as the labels for and the same for the id because they are connected togther. Inside of the selects I gave an option group with its own lable and the different options for the user to choose from. I did the same thing again, but for the specific fonts. -->
 
             <fieldset>
                 <legend>Fonts</legend>
                 <label for="fontfamily">Font Family</label>
                 <select name="fontfamily" id="fontfamily">
-                    <optgroup label="generic fonts">
+                    <optgroup label="generic">
                         <option value="default">default</option>
                         <option value="serif">serif</option>
                         <option value="sans-serif">sans-serif</option>
@@ -104,21 +109,23 @@
                     </optgroup>
 
                 </select>
-                <label for="fontstyle">Font style</label>
+
+                <!-- I made a label for the different things you can change for  the text that is rendered. I then gave them selects and different options for the user to choose from. Each labels for matches with the id of the select because they are conected together and will have their own section. -->
+
+                <label for="fontstyle">Font Style</label>
                 <select name="fontstyle" id="fontstyle">
                     <option value="normal">normal</option>
                     <option value="italic">italic</option>
                     <option value="oblique">oblique</option>
                 </select>
 
-                </select>
                 <label for="fontweight">Font weight</label>
                 <select name="fontweight" id="fontweight">
                     <option value="normal">normal</option>
                     <option value="bold">bold</option>
                 </select>
 
-                </select>
+
                 <label for="textdecoration">Text Decoration</label>
                 <select name="textdecoration" id="textdecoration">
                     <option value="none">none</option>
@@ -127,9 +134,9 @@
                     <option value="underline">underline</option>
                 </select>
 
-                </select>
-                <label for="texttransformation">Text Transformation</label>
-                <select name="texttransformation" id="texttransformation">
+
+                <label for="texttransformation">Text Transform</label>
+                <select name="texttransform" id="texttransform">
                     <option value="none">none</option>
                     <option value="capitalize">capitalize</option>
                     <option value="lowercase">lowercase</option>
@@ -143,26 +150,28 @@
                 </select>
             </fieldset>
 
+            <!-- I made a fieldset for the colors and backgroundcolor with valeues for the set color.  -->
+
             <fieldset>
                 <legend>Colors</legend>
                 <label for="color">Font Color (hexadecimal)</label>
                 <input type="color" name="color" id="color" value="#000000">
 
                 <label for="backgroundcolor">Background color</label>
-                <input type="" name="backgroundcolor" id="backgroundcolor" placeholder="#rrggbb" value=" #FFFFFF" type-="color">
+                <input name="backgroundcolor" id="backgroundcolor" placeholder="#rrggbb" value="#FFFFFF" type="color">
             </fieldset>
             <fieldset>
                 <legend>Sizes</legend>
-                <label for="rangeslider">Font Size (px)</label>
-                <div class="rangeslider">
+                <label for="fontsize">Font Size (px)</label>
+                <div class="slider">
                     8
-                    <input type="range" name="rangeslider" id="rangeslider" step="1" min="8" max="40" value="14">
+                    <input type="range" name="fontsize" id="fontsize" step="1" min="8" max="40" value="14">
                     40
                 </div>
 
 
                 <label for="letterspacing">Letter Spacing (px)</label>
-                <div class="rangeslider">
+                <div class="slider">
                     0
                     <input type="range" name="letterspacing" id="rangeslider" step="1" min="0" max="10" value="0">
                     10
@@ -170,7 +179,7 @@
 
 
                 <label for="wordspacing">Word Spacing (px)</label>
-                <div class="rangeslider">
+                <div class="slider">
                     0
                     <input type="range" name="wordspacing" id="rangeslider" step="1" min="0" max="10" value="0">
                     10
@@ -178,15 +187,15 @@
 
 
                 <label for="lineheight">Line Height (em)</label>
-                <div class="rangeslider">
+                <div class="slider">
                     0
-                    <input type="range" name="lineheight" id="rangeslider" step="0.2" min="0" max="4" value="0">
+                    <input type="range" name="lineheight" id="rangeslider" step="0.2" min="0" max="4" value="1">
                     4
                 </div>
 
 
                 <label for="textindent">Text Indent (px)</label>
-                <div class="rangeslider">
+                <div class="slider">
                     0
                     <input type="range" name="textindent" id="rangeslider" step="1" min="0" max="10" value="0">
                     10
